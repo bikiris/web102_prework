@@ -40,8 +40,9 @@ function addGamesToPage(games) {
         // between the end of the src attribute and the end of the tag ("/>")
         div.innerHTML = `
             <img class="game-img" src="${item.img}"/>
-            <p>Name: ${item.name}</p>
-            <p>Description: ${item.description}</p>
+            <h3>${item.name}</h3>
+            <p>${item.description}</p>
+            <p>Backers: ${item.backers}</p>
         `;
         // append the game to the games-container
         const container = document.querySelector('#games-container');
