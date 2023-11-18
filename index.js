@@ -164,7 +164,7 @@ const displayStr = unfundedGames < 2 ? `A total of \$${totalContributions.toLoca
 
 // create a new DOM element containing the template string and append it to the description container
 descriptionContainer.innerHTML = `
-    <h1>${displayStr}</h1>
+    <p>${displayStr}</p>
 `;
 
 /************************************************************************************
